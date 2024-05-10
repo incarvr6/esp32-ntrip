@@ -25,6 +25,7 @@
 #include <uart.h>
 #include <tasks.h>
 #include "config.h"
+#include <esp_netif.h>
 
 static const char *TAG = "CONFIG";
 static const char *STORAGE = "config";

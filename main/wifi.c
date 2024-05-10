@@ -19,7 +19,7 @@
 #include <esp_wifi.h>
 #include <esp_log.h>
 #include <string.h>
-#include <mdns.h>
+#include <lwip/apps/mdns.h>
 #include <math.h>
 #include <driver/gpio.h>
 #include <sys/param.h>
@@ -31,6 +31,7 @@
 #include <esp_netif_ip_addr.h>
 #include "wifi.h"
 #include "config.h"
+#include "rom/ets_sys.h"
 
 static const char *TAG = "WIFI";
 
