@@ -691,7 +691,7 @@ static esp_err_t status_get_handler(httpd_req_t *req) {
     }
 
     cJSON *sta = cJSON_AddObjectToObject(wifi, "sta");
-    cJSON_AddBoolToObject(sta, "active", ap_status.active);
+    cJSON_AddBoolToObject(sta, "active", sta_status.active);
     if (sta_status.active) {
         cJSON_AddBoolToObject(sta, "connected", sta_status.connected);
         if (sta_status.connected) {
